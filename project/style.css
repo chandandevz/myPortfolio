@@ -232,4 +232,8 @@ footer p{
     border-radius: 10px;
     }
 
+    footer{
+        height: 40px;
+    }
+
   }
