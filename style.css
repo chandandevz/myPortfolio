@@ -159,4 +159,8 @@ footer p{
     .section-1{
         min-height: 100vh;
     }
+
+    footer{
+        height: 40px;
+    }
   }
