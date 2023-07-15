@@ -136,6 +136,7 @@ body{
     box-shadow: 10px 10px 3px #4740ff;
     border-radius: 20px;
     position: relative;
+    margin: 20px 0px;
 }
 
 .contact-container h1{
