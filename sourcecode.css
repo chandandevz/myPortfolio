@@ -1,1 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+
+header{
+    background-color: #1577ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.6);
+}
+
+.nav-list{
+    margin-right: 4rem;
+    list-style: none;
+}
+
+.nav-list li{
+    display: inline-block;
+    margin: .8rem;
+    font-size: 1.6rem;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero-section{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('docs/banner2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-content h1{
+    color: #ffa840;
+    font-size: 6rem;
+}
+
+.hero-content h3{
+    font-size: 2.5rem;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 380;
+}
+
+.logo h3{
+    color: white;
+    padding: 6px;
+    font-size: 2rem;
+    border: ;
+    margin-left: 2.9rem;
+}
+
+.hero-btn button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border: 1px solid white;
+    font-size: 1.9rem;
+    transition: background 0.3s ease;
+}
+
+.hero-btn button:hover{
+   /* background-color: rgba(0,0,0,0.5);*/
+    background-color: white;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.toggle-button{
+    display: none;
+}
+
+.open-menu{
+    color: white;
+    font-size: 2.8rem;
+    margin-right: 3.5rem;
+}
+
+#project-section{
+    min-height: 100vh;
+    padding: 10px;
+    padding-top: 4rem;
+}
+
+#s2heading{
+    text-align: center;
+    font-size: 2.8rem;
+    border-bottom: 2px solid black;
+    padding: 6px;
+    width: 40%;
+    margin: auto;
+}
+
+.card-container{
+    width: 90%;
+    min-height: 80vh;
+    margin: 40px auto;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-items{
+    width: 90%;
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 10px 10px 6px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+.card-items img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.pro-name{
+    display: block;
+    position: absolute;
+    font-size: 1.6rem;
+    bottom: 18px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 6px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-items:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    border-top: 2px solid black;
+    gap: 10px;
+}
+
+.my-handles img{
+    margin: 0 5px;
+}
+
+.footer-text{
+    font-size: 1.6rem;
+}    
+
+@media (max-width:600px){
+    .nav-bar{
+     display: none;
+     width: 100%;
+     min-height: 110vh;
+     position: absolute;
+     top: 0;
+     right: 0;
+     background-color: #ffa69e;
+background-image: linear-gradient(315deg, #ffa69e 0%, #5d4954 74%);
+     gap: 0.5rem;
+     transition: all 0.4s linear;
+}
+ 
+    .active{
+     display: block;
+    }
+    
+    .nav-bar ul{
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-bar ul li{
+        padding: 6px 12px;
+        text-align: center;
+        width: 50%;
+        transition: border 0.3s ease;
+    }
+    
+    .nav-bar a{
+        border-bottom: 1px solid transparent;
+        padding: 6px 12px;
+    }
+    
+    .nav-bar ul a:hover{
+        border-bottom: 1px solid white;
+        transition: 0.3s ease;
+        color: #95ffa2;
+    }
+    
+    .toggle-button{
+    display: block;
+}
+
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 3rem;
+    }
+    
+    .hero-content{
+        margin: 1.8rem 0;
+    }
+    
+    .hero-content h1{
+    color: #ffa840;
+    font-size: 4.7rem;
+    }
+    
+    .hero-content h3{
+    font-size: 2.3rem;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 380;
+    }
+    
+    .card-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .card-items{
+        margin: 20px 0px;
+    }
+    
+    #s2heading{
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+}
 
