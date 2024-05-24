@@ -44,7 +44,7 @@ h1{
     height: 100%;
 }
 
-button{
+#main-btn{
     border: none;
     padding: 10px 26px;
     font-size: 18px;
@@ -54,7 +54,7 @@ button{
     box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
 }
 
-button:hover{
+#main-btn:hover{
     background-color: black;
 }
 
